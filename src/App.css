@@ -13,11 +13,28 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 350px;
   height: 596px;
-  border: 1px solid white;
   background-color: rgba(21, 38, 63, 1);
+  border-radius: 15px;
+}
+
+.container_text {
+  max-width: 302px;
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+}
+
+.nft_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 24px;
 }
 
 h1 {
@@ -25,7 +42,100 @@ h1 {
   font-weight: 450;
   font-style: SemiBold;
   font-size: 22px;
-  line-height: 100%;
+  line-height: 10%;
   letter-spacing: 0px;
   color: white;
+}
+
+h1:hover {
+  color: rgba(0, 255, 248, 1);
+  cursor: pointer;
+}
+
+.container_text > p {
+  font-family: "Outfit";
+  font-weight: 300;
+  font-style: Light;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: rgba(139, 172, 217, 1);
+}
+
+.price_time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 301px;
+  height: 20px;
+  margin-top: 24px;
+}
+
+hr {
+  width: 302px;
+  height: 1px;
+  top: 514px;
+  left: 24px;
+  opacity: 1;
+  background-color: rgba(46, 64, 90, 1);
+  border: none;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  height: 33px;
+}
+
+footer > p {
+  font-family: "Outfit";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: rgba(139, 172, 217, 1);
+  padding-right: 78px;
+}
+
+span {
+  color: rgba(255, 255, 255, 1);
+}
+
+span:hover {
+  color: rgba(0, 255, 248, 1);
+  cursor: pointer;
+}
+
+.eye_icon {
+  position: absolute;
+  display: none;
+}
+
+.main_nft_image {
+  width: 100%;
+  height: 100%;
+}
+
+.over_color {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 248, 0.5);
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.nft_image:hover .over_color {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.nft_image:hover .eye_icon {
+  display: block;
 }

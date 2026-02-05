@@ -1,0 +1,15 @@
+.cost {
+  font-family: "Outfit";
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: rgba(0, 255, 248, 1);
+}
+
+.price_container {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
